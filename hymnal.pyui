@@ -1,0 +1,65 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {240, 32}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "71554A11-55B5-492F-B676-73FEA8CB1F65",
+          "font_size" : 17,
+          "frame" : "{{20, 104}, {200, 32}}",
+          "custom_attributes" : "{\n    'clear_button_mode': 'always'\n}",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "action" : "search",
+          "placeholder" : "Search",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "search",
+          "flex" : "WB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 32}, {240, 208}}",
+        "class" : "TableView",
+        "attributes" : {
+          "uuid" : "35F19395-94EE-443C-91F3-8A45E522ED45",
+          "flex" : "WH",
+          "data_source_action" : "",
+          "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+          "frame" : "{{20, 20}, {200, 200}}",
+          "data_source_items" : "",
+          "data_source_number_of_lines" : 1,
+          "custom_attributes" : "",
+          "data_source_move_enabled" : false,
+          "data_source_delete_enabled" : false,
+          "data_source_font_size" : 18,
+          "row_height" : 44,
+          "class" : "TableView",
+          "name" : "results",
+          "editing" : false
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {240, 240}}",
+    "class" : "View",
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "Trinity Hymnal",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
