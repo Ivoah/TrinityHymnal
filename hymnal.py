@@ -41,7 +41,7 @@ def filter(sender):
     ])
     
     if f and any(f.values()):
-        v['results'].data_source.set_hymns(sorted((hymns[int(hymn) - 1] for tag in tags if f[tag['name']] for hymn in tag['hymns']), key=lambda h: int(h['#'])))
+        v['results'].data_source.set_hymns(sorted((hymn for hymn in hymns if all(hymn['#'] in tag['hymns'] for tag in tags if f[tag['name']])), key=lambda h: int(h['#'])))
     else:
         v['results'].data_source.set_hymns(hymns)
     v['results'].reload_data()
