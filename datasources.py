@@ -102,7 +102,7 @@ class DetailDataSource:
             if row == 0:
                 cell.text_label.text = 'Add to history...'
             else:
-                cell.text_label.text = hist[row - 1].strftime('%A %B %d')
+                cell.text_label.text = hist[row - 1].strftime('%A %B %d, %Y')
                 cell.selectable = False
         return cell
 
@@ -253,7 +253,7 @@ class HistoryDataSource:
     def tableview_title_for_header(self, tableview, section):
         # Return a title for the given section.
         # If this is not implemented, no section headers will be shown.
-        return self.history[section][0].strftime('%A %B %d')
+        return self.history[section][0].strftime('%A %B %d, %Y')
 
     def tableview_can_delete(self, tableview, section, row):
         # Return True if the user should be able to delete the given row.
